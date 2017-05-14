@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#666666">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:background="#2196F3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.Toolbar>
+
+    <Chronometer
+        android:id="@+id/chronometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:gravity="center_horizontal"
+        android:paddingTop="0dp"
+        android:textSize="60sp"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/action_start"
+        android:layout_below="@+id/chronometer"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/stopButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/action_stop"
+        android:layout_below="@+id/startButton"
+        android:layout_alignStart="@+id/startButton" />
+
+    <TextView
+        android:text="Steps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_step"
+        android:layout_below="@+id/stopButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp" />
+
+    <TextView
+        android:text="0"
+        android:textSize="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_stepCounter"
+        android:layout_below="@+id/tv_step"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Estimated distance travelled"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:id="@+id/distTravelled"
+        android:layout_below="@+id/tv_stepCounter"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="0"
+        android:textSize="50dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/distCount"
+        android:gravity="center"
+        android:layout_below="@+id/distTravelled"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="metres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/distCount"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/metres" />
+
+
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:key="pref1"
+        android:title="SoundOptions">
+        <CheckBoxPreference android:title="Sound"
+            android:defaultValue="true"
+            android:summary="This option if selected will allow the application to have sound every 100 steps."
+            android:key="applicationSound" />
+</PreferenceCategory>
+</PreferenceScreen>
